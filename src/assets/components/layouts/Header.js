@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -6,9 +6,25 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
 import "../../../styles/Header.css";
 export default function Header() {
+  const [nav, setNav] = useState(false);
+
+  const changeValueOnScroll = () => {
+    const scrollValue = window.scrollY;
+    if (scrollValue > 100) {
+      setNav(true);
+    } else {
+      setNav(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeValueOnScroll);
+    return () => {
+      window.removeEventListener("scroll", changeValueOnScroll);
+    };
+  }, []);
   return (
     <header>
-      <Navbar expand="lg">
+      <Navbar expand="lg" className={nav ? "sticky" : ""}>
         <Container>
           <Navbar.Brand>
             <Link className="logo" as={Link} to="/">

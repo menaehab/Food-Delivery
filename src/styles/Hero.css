@@ -1,0 +1,57 @@
+/* Home Hero 1.0 */
+
+.hero-section {
+  position: relative;
+  background: url("../assets/assets/hero/hero-1.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 170px;
+  padding-bottom: 90px;
+}
+
+.hero-section .price-badge {
+  background: url("../assets/assets/hero/price-badge-yellow.png") no-repeat
+    center center;
+  background-size: contain;
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  width: 180px;
+  height: 176px;
+  text-align: center;
+}
+
+.hero-section .price-badge .h3-lg {
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.hero-section .price-badge .h4-xs {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.badge-text {
+  position: relative;
+  top: 45px;
+}
+
+.hero-title1 {
+  font-size: 6.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: "Parkinsans", sans-serif !important;
+}
+.hero-title2 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  font-family: "Parkinsans", sans-serif !important;
+}
+
+@media (max-width: 768px) {
+  .hero-section .price-badge {
+    width: 150px;
+  }
+}

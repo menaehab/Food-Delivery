@@ -2,11 +2,11 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-export default function layout({ childern }) {
+export default function Layout({ children }) {
   return (
     <>
       <Header />
-      <main>{childern}</main>
+      <main>{children}</main>
       <Footer />
     </>
   );
