@@ -10,6 +10,7 @@ import Image6 from "../../assets/assets/menu/burger-16.jpg";
 import Image7 from "../../assets/assets/menu/burger-17.jpg";
 import Image8 from "../../assets/assets/menu/burger-18.jpg";
 import Cards from "../../assets/components/layouts/Cards";
+import { Link } from "react-router-dom";
 export default function Menu() {
   const mockData = [
     {
@@ -103,6 +104,26 @@ export default function Menu() {
                 // renderTatingIcons={renderRatingIcons}
               />
             ))}
+          </Row>
+          <Row className="pt-5">
+            <Col sm={6} lg={6}>
+              <div className="ads-box ads-img1 mb-5 mb-md-0">
+                <h4 className="mb-0">GET YOUR FREE</h4>
+                <h5>CHEESE FRIES</h5>
+                <Link to="/" className="btn btn-red px-4 rounded-0">
+                  Learn More
+                </Link>
+              </div>
+            </Col>
+            <Col sm={6} lg={6}>
+              <div className="ads-box ads-img2">
+                <h4 className="mb-0">GET YOUR FREE</h4>
+                <h5>CHEESE FRIES</h5>
+                <Link to="/" className="btn btn-red px-4 rounded-0">
+                  Learn More
+                </Link>
+              </div>
+            </Col>
           </Row>
         </Container>
       </section>

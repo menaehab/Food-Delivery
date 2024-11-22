@@ -1,10 +1,12 @@
 .menu-section {
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 .menu-section h2 {
   font-size: 36px;
   font-weight: 800;
   margin-bottom: 40px;
+  color: var(--light-red) !important;
 }
 
 .item-rating {
@@ -36,4 +38,40 @@
   color: var(--black) !important;
   background-color: transparent !important;
   border-color: var(--black) !important;
+}
+
+.menu-section .ads-box {
+  text-align: right;
+  padding: 80px 35px 50px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.menu-section .ads-img1 {
+  background: url("../assets/assets/menu/ads-1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.menu-section .ads-img2 {
+  background: url("../assets/assets/menu/ads-2.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.menu-section .ads-box h4 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: var(--brown);
+}
+
+.menu-section .ads-box h5 {
+  font-size: 2.375rem;
+  color: var(--brown);
+}
+
+.menu-section .ads-box a {
+  margin-top: 15px;
+  font-size: 18px;
 }
