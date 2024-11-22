@@ -5,6 +5,7 @@ import Hero from "../Home/Hero";
 import Explore from "./Explore";
 import Menu from "./Menu";
 import Promotion from "./Promotion";
+import Shop from "./Shop";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Explore />
         <Menu />
         <Promotion />
+        <Shop />
       </Layout>
     </>
   );

@@ -27,7 +27,6 @@
 
 .bg-parallax-scroll {
   background-attachment: scroll;
-  height: 500px;
 }
 
 @media (max-width: 1200px) {
