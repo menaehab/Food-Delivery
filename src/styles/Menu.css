@@ -1,0 +1,39 @@
+.menu-section {
+  padding-top: 80px;
+}
+.menu-section h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.item-rating {
+  font-size: 1rem !important;
+}
+.item-paragraph {
+  font-size: 14px !important;
+}
+.buy-now {
+  color: var(--light-black) !important;
+  background-color: var(--yellow) !important;
+  border-color: var(--yellow) !important;
+  padding: 6px 12px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  font-family: var(--oswald-font) !important;
+  vertical-align: middle !important;
+  text-transform: uppercase !important;
+  transition: all 0.3s ease-in-out !important;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -moz-transition: all 0.3s ease-in-out !important;
+  -ms-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+}
+
+.buy-now:hover,
+.buy-now:focus {
+  color: var(--black) !important;
+  background-color: transparent !important;
+  border-color: var(--black) !important;
+}

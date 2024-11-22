@@ -3,6 +3,7 @@ import "../../styles/Header.css";
 import Layout from "../../assets/components/layouts/Layout";
 import Hero from "../Home/Hero";
 import Explore from "./Explore";
+import Menu from "./Menu";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Layout>
         <Hero />
         <Explore />
+        <Menu />
       </Layout>
     </>
   );
