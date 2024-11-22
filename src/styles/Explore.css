@@ -1,0 +1,79 @@
+.explore-section {
+  padding-top: 80px;
+}
+
+.bargers-img {
+  padding-top: 50px;
+  width: calc(100% + 50%);
+}
+.explore-section h2 {
+  font-size: 3.5rem;
+}
+.explore-section p {
+  color: var(--gray);
+  padding: 20px 30px;
+  font-size: 19px;
+}
+
+.explore-now {
+  color: var(--light-black) !important;
+  background-color: var(--yellow) !important;
+  border-color: var(--yellow) !important;
+  padding: 15px 38px !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  font-family: var(--oswald-font) !important;
+  vertical-align: middle !important;
+  text-transform: uppercase !important;
+  transition: all 0.3s ease-in-out !important;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -moz-transition: all 0.3s ease-in-out !important;
+  -ms-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+}
+
+.explore-now:hover,
+.explore-now:focus {
+  color: var(--black) !important;
+  background-color: transparent !important;
+  border-color: var(--black) !important;
+}
+
+.explore-wrapper {
+  background-color: var(--yellow);
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.explore-box .explore-icon img {
+  max-width: 25%;
+}
+
+.explore-box h4 {
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0.5008px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.explore-box p {
+  padding: 0 20px;
+}
+
+@media (max-width: 992px) {
+  .explore-section h2 {
+    font-size: 2.5rem;
+  }
+  .explore-section p {
+    padding: 20px 0;
+  }
+  .explore-box p {
+    padding: 0;
+  }
+  .bargers-img {
+    padding-top: 50px;
+    width: calc(100%);
+  }
+}
