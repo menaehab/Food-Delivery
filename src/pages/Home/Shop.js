@@ -1,7 +1,12 @@
 import React from "react";
 import "../../styles/Shop.css";
-import { Carousel, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
 import StoreIOS from "../../assets/assets/shop/appstore.png";
 import StoreGoogle from "../../assets/assets/shop/googleplay.png";
 import DownloadImage from "../../assets/assets/shop/e-shop.png";
@@ -13,6 +18,7 @@ import Brand5 from "../../assets/assets/brands/brand-15.png";
 import Brand6 from "../../assets/assets/brands/brand-16.png";
 import Brand7 from "../../assets/assets/brands/brand-17.png";
 import Brand8 from "../../assets/assets/brands/brand-18.png";
+
 export default function Shop() {
   return (
     <>
@@ -49,52 +55,100 @@ export default function Shop() {
       </section>
       <section className="brand-section">
         <Container>
-          <Row className="align-items-center">
-            <Carousel>
-              <Carousel.Item>
-                <Carousel.Caption>
-                  <div className="d-flex align-items-center justify-content-between">
-                    <div className="brand-img">
-                      <img src={Brand1} alt="brand-1" className="img-fluid" />
-                    </div>
-                    <div className="brand-img">
-                      <img src={Brand2} alt="brand-2" className="img-fluid" />
-                    </div>
-                    <div className="brand-img">
-                      <img src={Brand3} alt="brand-3" className="img-fluid" />
-                    </div>
-                    <div className="brand-img">
-                      <img src={Brand4} alt="brand-4" className="img-fluid" />
-                    </div>
-                    <div className="brand-img">
-                      <img src={Brand5} alt="brand-5" className="img-fluid" />
-                    </div>
-                  </div>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <Carousel.Caption>
-                  <div className="d-flex align-items-center justify-content-between">
-                    <div className="brand-img">
-                      <img src={Brand4} alt="brand-4" className="img-fluid" />
-                    </div>
-                    <div className="brand-img">
-                      <img src={Brand5} alt="brand-5" className="img-fluid" />
-                    </div>
-                    <div className="brand-img">
-                      <img src={Brand6} alt="brand-6" className="img-fluid" />
-                    </div>
-                    <div className="brand-img">
-                      <img src={Brand7} alt="brand-7" className="img-fluid" />
-                    </div>
-                    <div className="brand-img">
-                      <img src={Brand8} alt="brand-8" className="img-fluid" />
-                    </div>
-                  </div>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
-          </Row>
+          <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={30}
+            slidesPerView={4}
+            lazy={true}
+            loop={true}
+            breakpoints={{
+              0: { slidesPerView: 1 },
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 5 }
+            }}
+          >
+            <SwiperSlide>
+              <div className="brand-img">
+                <img
+                  src={Brand1}
+                  alt="brand-1"
+                  className="img-fluid swiper-lazy"
+                />
+                <div className="swiper-lazy-preloader"></div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="brand-img">
+                <img
+                  src={Brand2}
+                  alt="brand-2"
+                  className="img-fluid swiper-lazy"
+                />
+                <div className="swiper-lazy-preloader"></div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="brand-img">
+                <img
+                  src={Brand3}
+                  alt="brand-3"
+                  className="img-fluid swiper-lazy"
+                />
+                <div className="swiper-lazy-preloader"></div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="brand-img">
+                <img
+                  src={Brand4}
+                  alt="brand-4"
+                  className="img-fluid swiper-lazy"
+                />
+                <div className="swiper-lazy-preloader"></div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="brand-img">
+                <img
+                  src={Brand5}
+                  alt="brand-5"
+                  className="img-fluid swiper-lazy"
+                />
+                <div className="swiper-lazy-preloader"></div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="brand-img">
+                <img
+                  src={Brand6}
+                  alt="brand-6"
+                  className="img-fluid swiper-lazy"
+                />
+                <div className="swiper-lazy-preloader"></div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="brand-img">
+                <img
+                  src={Brand7}
+                  alt="brand-7"
+                  className="img-fluid swiper-lazy"
+                />
+                <div className="swiper-lazy-preloader"></div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="brand-img">
+                <img
+                  src={Brand8}
+                  alt="brand-8"
+                  className="img-fluid swiper-lazy"
+                />
+                <div className="swiper-lazy-preloader"></div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </Container>
       </section>
     </>

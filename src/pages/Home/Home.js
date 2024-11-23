@@ -6,6 +6,7 @@ import Explore from "./Explore";
 import Menu from "./Menu";
 import Promotion from "./Promotion";
 import Shop from "./Shop";
+import Testimonials from "./Testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Menu />
         <Promotion />
         <Shop />
+        <Testimonials />
       </Layout>
     </>
   );

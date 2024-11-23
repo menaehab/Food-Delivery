@@ -31,31 +31,21 @@
   text-align: center;
 }
 
-.brand-section {
-  padding: 250px 0 40px;
-  background: var(--light-gray);
-  overflow: hidden;
-}
-
-.brand-section .brand-img {
+.brand-img {
   width: 180px;
-  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.carousel.slide .carousel-inner {
-  overflow: unset;
-}
-
-.carousel-slide .carousel-innner .carousel-caption {
-  position: relative;
-  right: unset;
-  left: unset;
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
-  .brand-section {
-    padding: 150px 0 40px;
-  }
   .shop-section h4 {
     font-size: 1.8rem;
   }
