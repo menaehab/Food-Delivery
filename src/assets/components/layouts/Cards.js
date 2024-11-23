@@ -33,7 +33,7 @@ export default function Cards({ image, rating, title, paragraph, price }) {
             )}`}</Card.Text>
             <Link
               to="/"
-              className="btn buy-now btn-sm d-flex align-items-center"
+              className="btn buy-now btn-sm d-flex align-items-center rounded-0"
             >
               <i className="bi bi-bag me-2"></i>
               Add to Cart
